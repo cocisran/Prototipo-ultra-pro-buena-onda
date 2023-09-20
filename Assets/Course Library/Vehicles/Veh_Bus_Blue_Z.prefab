@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 1622218990189248518}
   - component: {fileID: 8040915777397555520}
   - component: {fileID: -3687109914554647244}
+  - component: {fileID: -803946575341577941}
   m_Layer: 0
   m_Name: Veh_Bus_Blue_Z
   m_TagString: Vehicle
@@ -215,7 +216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb00a855d63da242a33796ffc6ef9a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
 --- !u!54 &-3687109914554647244
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -224,7 +224,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126218}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -232,6 +232,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-803946575341577941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0559aa714281011499fa806fc5449543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehiculeDestroyed: {fileID: 3165710017608483998, guid: 400035aa26910134390dd40d646b106f, type: 3}
 --- !u!1 &150944
 GameObject:
   m_ObjectHideFlags: 0

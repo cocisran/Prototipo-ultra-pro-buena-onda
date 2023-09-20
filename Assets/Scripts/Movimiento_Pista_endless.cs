@@ -7,6 +7,7 @@ public class Movimiento_Pista_endless : MonoBehaviour{
     public float speed;
 
     void LateUpdate(){
-        this.transform.Translate(Time.deltaTime * speed, 0, 0);
+        
+        this.transform.Translate(Time.deltaTime * GameVariables.pistaSpeed, 0, 0);
     }
 }
