@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2354226}
   - component: {fileID: 6535359504094003397}
   - component: {fileID: 3812301343471381608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_rr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 2351866}
   - component: {fileID: 8928475881048466891}
   - component: {fileID: 4706050834976973550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_rl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 2339896}
   - component: {fileID: 1427151352231724626}
   - component: {fileID: 3827795964760802334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 2319856}
   - component: {fileID: 185459391044287166}
   - component: {fileID: 8362814704199781933}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 3313442307395238052}
   - component: {fileID: 2871359190655793665}
   - component: {fileID: 7850319035561791108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Destroyed_Veh_Ute_Red_Z
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
@@ -666,6 +666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8780424320546655309, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}
 --- !u!1 &6295865931371732603 stripped
@@ -765,6 +769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crate_03
       objectReference: {fileID: 0}
+    - target: {fileID: 8780424320546655309, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}
 --- !u!4 &4577426397810571851 stripped
@@ -863,6 +871,10 @@ PrefabInstance:
     - target: {fileID: 8780424320546655309, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}
       propertyPath: m_Name
       value: Crate_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780424320546655309, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71782582b9d2cac4cba5251a3b767d13, type: 3}

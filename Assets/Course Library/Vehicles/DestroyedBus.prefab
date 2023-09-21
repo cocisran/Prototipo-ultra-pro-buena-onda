@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3165710017606256716}
   - component: {fileID: 6849908834708870486}
   - component: {fileID: 5122735099947681707}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_rl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 3165710017606283820}
   - component: {fileID: 5545722752554695543}
   - component: {fileID: 4801137023149800252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 3165710017606316636}
   - component: {fileID: 5200627553362508814}
   - component: {fileID: 3496683100530024631}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_rr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 3165710017606269198}
   - component: {fileID: 4426365458088552850}
   - component: {fileID: 7438290085764977824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DestroyedBus
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 3165710017606293048}
   - component: {fileID: 2485334326021989643}
   - component: {fileID: 3153001323339301142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}

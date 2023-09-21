@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Reiniciar : MonoBehaviour
-{
-    public void reiniciar()
-    {
+public class Reiniciar : MonoBehaviour{
+    public void reiniciar(){
         SceneManager.LoadScene(0);
         GameVariables.restart();
     }

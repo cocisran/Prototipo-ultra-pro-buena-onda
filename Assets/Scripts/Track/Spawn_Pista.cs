@@ -8,11 +8,10 @@ public class Spawn_Pista : MonoBehaviour{
     public Transform spawn;
 
     private void OnTriggerEnter(Collider other){
-        if (other.gameObject.CompareTag("Player")) {
+        if (other.gameObject.CompareTag("Player")){
             Instantiate(track, spawn.position, spawn.rotation);
-            GameVariables.enemySpeed += 2;
-            GameVariables.pistaSpeed += 5;
+            GameVariables.enemySpeed += 3;
+            GameVariables.pistaSpeed += 3;
         }
     }
-
 }
