@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Reiniciar : MonoBehaviour
-{
-    public void reiniciarJuego()
-    {
-        SceneManager.LoadScene(1);
+public class RegresarMenu : MonoBehaviour{
+    public void regresar(){
+        SceneManager.LoadScene(0);
         GameVariables.restart();
     }
 }
