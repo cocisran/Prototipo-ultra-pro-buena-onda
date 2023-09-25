@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,11 @@ public class Movimiento_Player_end : MonoBehaviour{
 
     void Update() {
         hm = Input.GetAxis("Horizontal");
-        this.transform.Translate(Time.deltaTime * speed * hm, 0, 0);
+        // Right movemente
+        if(  hm > 0 && this.transform.position.x <= GameVariables.upperAxisXConstrain)
+            this.transform.Translate(Time.deltaTime * speed * hm, 0, 0);
+        // Left movement
+        if( hm < 0 && this.transform.position.x >= GameVariables.lowerAxisXConstrain)
+            this.transform.Translate(Time.deltaTime * speed * hm, 0, 0);
     }
 }

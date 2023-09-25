@@ -9,9 +9,13 @@ public class Spawn_Vehicles : MonoBehaviour{
 
     private int randomNumber;
     void Start(){
-        foreach(GameObject spawn in spawns){
-            randomNumber = Random.Range(0, 4);
-            Instantiate(cars[randomNumber], spawn.transform.position, spawn.transform.rotation);
+        if (GameVariables.NumPista > 0)
+        {
+            foreach (GameObject spawn in spawns)
+            {
+                randomNumber = Random.Range(0, 4);
+                Instantiate(cars[randomNumber], spawn.transform.position, spawn.transform.rotation);
+            }
         }
     }
 }
