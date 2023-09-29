@@ -9,6 +9,8 @@ public class GameVariables : MonoBehaviour{
     private static readonly float initialScore = 0;
     private static readonly float initialSpawnProbability = 60;
     private static readonly float initialSpawnPowerUpProbability = 10;
+    private static readonly int initialLifes = 3;
+
 
     public static float pistaSpeed = initialValuePistaSpeed;
     public static float enemySpeed = initialValuenemySpeedValue;
@@ -17,9 +19,10 @@ public class GameVariables : MonoBehaviour{
     public static float spawnProbability = initialSpawnProbability;
     public static float spawnPowerUpProbability = initialSpawnPowerUpProbability;
     public static int NumPista = 0;
+    public static int lifes = initialLifes;
 
-    public static readonly float upperAxisXConstrain = 27;
-    public static readonly float lowerAxisXConstrain = -27;
+    public static readonly float upperAxisXConstrain = 26.5f;
+    public static readonly float lowerAxisXConstrain = -26.5f;
 
     public static void restart(){
         pistaSpeed = initialValuePistaSpeed;
@@ -29,5 +32,6 @@ public class GameVariables : MonoBehaviour{
         spawnPowerUpProbability = initialSpawnPowerUpProbability;
         NumPista = 0;
         powerUpSpeed = initialPowerUpSpeed;
+        lifes = initialLifes;
     }
 }
