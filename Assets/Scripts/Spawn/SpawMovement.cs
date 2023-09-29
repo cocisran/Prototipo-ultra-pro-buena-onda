@@ -8,10 +8,12 @@ public class SpawMovement : MonoBehaviour{
     public float spawnSpeed = 5;
     private int direccion = 1;
     public float interval = 0.3f;
+    public bool enable_powerups = false;
 
     void Start(){
         InvokeRepeating( "spawnVehicule" , 0, interval);
-        InvokeRepeating("spawnPowerUp", 0, interval);
+        if (enable_powerups)
+            InvokeRepeating("spawnPowerUp", 0, interval);
     }
 
     void FixedUpdate(){
