@@ -9,5 +9,6 @@ public class IsAlive : MonoBehaviour
     void Update()
     {
         GameVariables.score += time_multiplicator * Time.deltaTime;
+        Debug.Log(GameVariables.lifes);
     }
 }
