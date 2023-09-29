@@ -13,7 +13,8 @@ public class DestroyEnemy : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag != "Bullet" || !active) return;
+        if ((collision.gameObject.tag != "Bullet" &&
+             collision.gameObject.tag != "Player" )|| !active) return;
         active = false;
         Invoke("destroy", 0.1f);
         GameVariables.score += 50;

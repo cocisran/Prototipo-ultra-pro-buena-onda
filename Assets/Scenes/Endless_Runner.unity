@@ -611,6 +611,54 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &234382843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 234382844}
+  - component: {fileID: 234382845}
+  m_Layer: 9
+  m_Name: TankSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &234382844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234382843}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 228}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1385500138}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &234382845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234382843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2538a59c68e268a40954108a933d696f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicules:
+  - {fileID: 6392236772442329451, guid: 35e37f53d4d5d23438eb124d41c8f173, type: 3}
+  spawnSpeed: 200
+  interval: 1.5
 --- !u!850595691 &481223275
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1378,8 +1426,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347612374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 190}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 190}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1385500138}
@@ -1402,8 +1450,8 @@ MonoBehaviour:
   - {fileID: 178130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
   - {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
   - {fileID: 126218, guid: da59e5a3713884d4f9e9667c2befa1a4, type: 3}
-  - {fileID: 6392236772442329451, guid: 35e37f53d4d5d23438eb124d41c8f173, type: 3}
   spawnSpeed: 200
+  interval: 0.3
 --- !u!1 &1373918806
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1561,7 @@ Transform:
   - {fileID: 553062865}
   - {fileID: 170076735}
   - {fileID: 1347612375}
+  - {fileID: 234382844}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

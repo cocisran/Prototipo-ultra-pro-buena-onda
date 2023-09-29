@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6623804552856727136}
   - component: {fileID: 2943524934280800649}
   - component: {fileID: 1360010204654739283}
-  - component: {fileID: -2593485782997794782}
   - component: {fileID: 7408633376815102867}
+  - component: {fileID: 7931009764966380086}
   m_Layer: 0
   m_Name: EnemyBullet
   m_TagString: EnemyBullet
@@ -101,21 +101,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!136 &-2593485782997794782
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2774039564604745579}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.031648993
-  m_Height: 0.55399686
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CollisionDetection: 1
 --- !u!114 &7408633376815102867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,3 +116,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeSpan: 4
   bulletHitDespawn: 0.5
+--- !u!136 &7931009764966380086
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774039564604745579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.0399719
+  m_Height: 0.39691314
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0.11067505}

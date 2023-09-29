@@ -6,9 +6,10 @@ public class SpawMovement : MonoBehaviour{
     public GameObject[] vehicules;
     public float spawnSpeed = 5;
     private int direccion = 1;
+    public float interval = 0.3f;
 
     void Start(){
-        InvokeRepeating( "spawnVehicule" , 0, 0.3f);
+        InvokeRepeating( "spawnVehicule" , 0, interval);
     }
 
     void FixedUpdate(){
