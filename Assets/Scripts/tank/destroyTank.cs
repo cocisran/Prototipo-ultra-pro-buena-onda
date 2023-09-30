@@ -17,7 +17,7 @@ public class destroyTank : MonoBehaviour{
         if ((collision.gameObject.tag != "Vehicle" &&
              collision.gameObject.tag != "Enemy" &&
              collision.gameObject.tag != "EnemyBullet" )
-            || !active) return;
+            || !active || GameVariables.inmortal) return;
         active = false;
         
         if (collision.gameObject.tag == "Vehicle")
@@ -25,6 +25,7 @@ public class destroyTank : MonoBehaviour{
         if (collision.gameObject.tag == "Enemy")
             GameVariables.score = 50;
 
+       
         Invoke("setActive", 0.5f);
         GameVariables.lifes -= GameVariables.lifes <= 0 ? 0 : 1;
         if (GameVariables.lifes <= 0)

@@ -20,6 +20,7 @@ public class GameVariables : MonoBehaviour{
     public static float spawnPowerUpProbability = initialSpawnPowerUpProbability;
     public static int NumPista = 0;
     public static int lifes = initialLifes;
+    public static bool inmortal = false;
 
     public static readonly float upperAxisXConstrain = 26.5f;
     public static readonly float lowerAxisXConstrain = -26.5f;
@@ -33,5 +34,6 @@ public class GameVariables : MonoBehaviour{
         NumPista = 0;
         powerUpSpeed = initialPowerUpSpeed;
         lifes = initialLifes;
+        inmortal = false;
     }
 }
