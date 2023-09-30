@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameVariables : MonoBehaviour{
+public class GameVariables : MonoBehaviour {
     private static readonly float initialValuePistaSpeed = 25;
     private static readonly float initialValuenemySpeedValue = 30;
     private static readonly float initialPowerUpSpeed = 25;
@@ -10,7 +10,6 @@ public class GameVariables : MonoBehaviour{
     private static readonly float initialSpawnProbability = 60;
     private static readonly float initialSpawnPowerUpProbability = 5;
     public static readonly int initialLifes = 3;
-
 
     public static float pistaSpeed = initialValuePistaSpeed;
     public static float enemySpeed = initialValuenemySpeedValue;
