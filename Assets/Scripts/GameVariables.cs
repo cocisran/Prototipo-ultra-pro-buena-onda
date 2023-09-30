@@ -9,7 +9,7 @@ public class GameVariables : MonoBehaviour {
     private static readonly float initialScore = 0;
     private static readonly float initialSpawnProbability = 60;
     private static readonly float initialSpawnPowerUpProbability = 1;
-    public static readonly int initialLifes = 3;
+    public static readonly int initialLifes = 5;
 
     public static float pistaSpeed = initialValuePistaSpeed;
     public static float enemySpeed = initialValuenemySpeedValue;
