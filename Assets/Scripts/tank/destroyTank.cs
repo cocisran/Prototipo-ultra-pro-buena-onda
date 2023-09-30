@@ -39,7 +39,7 @@ public class destroyTank : MonoBehaviour{
         Invoke("setActive", 0.5f);
         GameVariables.lifes -= GameVariables.lifes <= 0 ? 0 : 1;
 
-        barraDeVida.CambiarVidaActual(GameVariables.lifes);
+        // barraDeVida.CambiarVidaActual(GameVariables.lifes);
         if (GameVariables.lifes < max_life/2) colorPeligro = Color.red;
         else colorPeligro = Color.white;
         imagen.color = colorPeligro;

@@ -8,7 +8,7 @@ public class GameVariables : MonoBehaviour {
     private static readonly float initialPowerUpSpeed = 25;
     private static readonly float initialScore = 0;
     private static readonly float initialSpawnProbability = 60;
-    private static readonly float initialSpawnPowerUpProbability = 5;
+    private static readonly float initialSpawnPowerUpProbability = 1;
     public static readonly int initialLifes = 3;
 
     public static float pistaSpeed = initialValuePistaSpeed;

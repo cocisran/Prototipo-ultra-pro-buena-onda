@@ -11,6 +11,11 @@ public class BarraDeVida : MonoBehaviour{
         slider = GetComponent<Slider>();
     }
 
+    private void Update()
+    {
+        CambiarVidaActual(GameVariables.lifes);
+    }
+
     public void CambiarVidamaxima(float vidaMaxima){
         slider.maxValue = vidaMaxima;
     }
