@@ -13,12 +13,16 @@ public class HealthUp : MonoBehaviour
         repairSound = GetComponent<AudioSource>();
 
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag != "Player" || !active) return;
+        if (other.gameObject.tag != "Player" || !active) return;
         active = false;
         GameVariables.score += 10;
+        if (GameVariables.lifes < GameVariables.initialLifes) {
+            GameVariables.lifes++;
+        }
         repairSound.Play();
+        GetComponent<Renderer>().enabled = false;
         Destroy(this.gameObject, repairSound.clip.length);
     }
 }
